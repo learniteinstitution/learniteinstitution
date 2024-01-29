@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Learnite Institution</title>
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+  <!-- Header with Nav Menu -->
+  <header>
+    <div class="logo">
+      <img src="assets\images\logoL.png">
+    </div>
+    
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="admission.html">Admission</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="jobs.html">Jobs</a></li>
+        <li><a href="notice.html">Notice</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Image Slider -->
+
+  <div class="slider">
+    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="active">
+    <img src="https://images.unsplash.com/photo-1560253023-3ec5d502959f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    <img src="https://images.unsplash.com/photo-1607706189992-eae578626c86?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+  </div>
+
+<!-- Slider Script -->
+<script>
+  var slides = document.querySelectorAll('.slider img');
+  var currentSlide = 0;
+  var slideInterval = setInterval(nextSlide, 3000);
+
+  function nextSlide() {
+    slides[currentSlide].classList.remove('active');
+    currentSlide = (currentSlide+1) % slides.length;
+    slides[currentSlide].classList.add('active');
+  } 
+</script>
+
+
+  <!-- Page Sections -->
+
+  <section id="courses">
+  
+   <h2>Our Popular Courses</h2>
+   
+   <div class="course-list">
+   
+     <div class="course">
+       <h3>Web Development</h3>
+       <p>Details about the web development course...</p>
+     </div>
+
+     <div class="course">
+       <h3>Java Programming</h3>
+       <p>Details about java programming course...</p>
+     </div>
+
+   </div>
+
+  </section>
+
+  <section id="about">
+
+    <h2>About Us</h2>
+
+    <p>Details about the institution...</p>
+
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer>
+    <div class="contact">
+      <h4>Contact</h4>
+      <p>Contact details...</p>
+    </div>
+
+<div class="social-links">
+
+    <a href="https://www.facebook.com">
+      <img src="https://img.icons8.com/color/48/000000/facebook-new.png"> 
+    </a>
+
+    <a href="https://www.twitter.com">
+     <img src="https://img.icons8.com/color/48/000000/twitter--v1.png">
+    </a>
+
+    <a href="https://www.instagram.com">
+      <img src="https://img.icons8.com/color/48/000000/instagram-new--v1.png">
+    </a>
+
+    <a href="https://www.youtube.com">
+      <img src="https://img.icons8.com/color/48/000000/youtube-play.png">
+    </a>
+
+  </div>
+  </footer>
+
+
+
+  
+<!-- Script -->
+<script src="script.js"></script>
+
+</body>
+</html>
